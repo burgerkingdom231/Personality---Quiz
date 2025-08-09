@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Personality Quiz</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Import the webpage's stylesheet -->
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- Import the webpage's JavaScript file -->
+  <script src="/script.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>Are You an Early Bird or a Night Owl?</h1>
+    <p>Answer these questions to find out your personality.</p>
+  </header>
+
+  <main>
+
+    <!-- Question 1 -->
+    <section class="question-block">
+      <h2>Where do you take the best selfies?</h2>
+      <div class="question">
+        <div class="answer-choice">
+          <img src="assets/beach.jpg" alt="The view of the ocean from the beach">
+          <br>
+          <button id="q1a1">Beach</button>
+        </div>
+        <div class="answer-choice">
+          <img src="assets/Lake.jpg" alt="The view of the lake from the deck">
+          <br>
+          <button id="q1a2">Lake</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question 2 -->
+    <section class="question-block">
+      <h2>What is your perfect summer outfit?</h2>
+      <div class="question">
+        <div class="answer-choice">
+          <img src="assets/Swimsuit.jpg" alt="A cool swimsuit">
+          <br>
+          <button id="q2a1">Swimsuit</button>
+        </div>
+        <div class="answer-choice">
+          <img src="assets/tshirt.jpg" alt="Nice T-shirts for summertime">
+          <br>
+          <button id="q2a2">T-shirt</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question 3 -->
+    <section class="question-block">
+      <h2>Pick your summer drink:</h2>
+      <div class="question">
+        <div class="answer-choice">
+          <img src="assets/coconut.jpg" alt="A coconut drink">
+          <br>
+          <button id="q3a1">Iced Coconut</button>
+        </div>
+        <div class="answer-choice">
+          <img src="assets/icedtea.jpg" alt="Iced tea in a cooler">
+          <br>
+          <button id="q3a2">Iced Tea</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Result -->
+    <section>
+      <div>
+         <button id="displayResult">What kind of person am I?</button>
+         <h2 id="result">You are a...</h2>
+         </div>
+      <button id="restart">Restart</button>
+
+    </section>
+
+
+  </main>
+
+</body>
+</html>
