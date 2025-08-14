@@ -2,15 +2,73 @@
 <html lang="en">
 
 <head>
-  <title>Personality Quiz</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personality Quiz</title>
 
-  <!-- Import the webpage's stylesheet -->
+  <!-- Styles -->
   <link rel="stylesheet" href="/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: #fdfdfd;
+    }
 
-  <!-- Import the webpage's JavaScript file -->
+    header {
+      padding: 20px;
+      background: #f8f8f8;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .question-block {
+      margin: 20px auto;
+      padding: 15px;
+      max-width: 600px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .question {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .answer-choice img {
+      width: 150px;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    button {
+      background: #4cafef;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #3a97d4;
+    }
+
+    #displayResult {
+      margin-top: 20px;
+    }
+  </style>
+
+  <!-- Script -->
   <script src="/script.js" defer></script>
 </head>
 
@@ -18,7 +76,7 @@
 
   <header>
     <h1>Are You an Early Bird or a Night Owl?</h1>
-    <p>Answer these questions to find out your personality.</p>
+    <p>Answer these questions to discover your personality type.</p>
   </header>
 
   <main>
@@ -28,13 +86,11 @@
       <h2>Where do you take the best selfies?</h2>
       <div class="question">
         <div class="answer-choice">
-          <img src="assets/beach.jpg" alt="The view of the ocean from the beach">
-          <br>
+          <img src="assets/beach.jpg" alt="Ocean view from the beach">
           <button id="q1a1">Beach</button>
         </div>
         <div class="answer-choice">
-          <img src="assets/Lake.jpg" alt="The view of the lake from the deck">
-          <br>
+          <img src="assets/Lake.jpg" alt="Lake view from the deck">
           <button id="q1a2">Lake</button>
         </div>
       </div>
@@ -46,12 +102,10 @@
       <div class="question">
         <div class="answer-choice">
           <img src="assets/Swimsuit.jpg" alt="A cool swimsuit">
-          <br>
           <button id="q2a1">Swimsuit</button>
         </div>
         <div class="answer-choice">
-          <img src="assets/tshirt.jpg" alt="Nice T-shirts for summertime">
-          <br>
+          <img src="assets/tshirt.jpg" alt="Summer T-shirt">
           <button id="q2a2">T-shirt</button>
         </div>
       </div>
@@ -62,28 +116,22 @@
       <h2>Pick your summer drink:</h2>
       <div class="question">
         <div class="answer-choice">
-          <img src="assets/coconut.jpg" alt="A coconut drink">
-          <br>
+          <img src="assets/coconut.jpg" alt="Coconut drink">
           <button id="q3a1">Iced Coconut</button>
         </div>
         <div class="answer-choice">
           <img src="assets/icedtea.jpg" alt="Iced tea in a cooler">
-          <br>
           <button id="q3a2">Iced Tea</button>
         </div>
       </div>
     </section>
 
     <!-- Result -->
-    <section>
-      <div>
-         <button id="displayResult">What kind of person am I?</button>
-         <h2 id="result">You are a...</h2>
-         </div>
+    <section class="question-block">
+      <button id="displayResult">What kind of person am I?</button>
+      <h2 id="result">You are a...</h2>
       <button id="restart">Restart</button>
-
     </section>
-
 
   </main>
 
