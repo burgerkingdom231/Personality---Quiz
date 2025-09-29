@@ -34,7 +34,7 @@ You can extend your project further by:
 
 ### ← README.md
 
-That's this file. This is the place to tell people more about what your website does and how you built it. 
+This is a school project that is still in its early stage....
 
 ### ← index.html
 
